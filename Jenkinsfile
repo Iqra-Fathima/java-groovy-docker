@@ -1,4 +1,4 @@
-node('any')   {
+node()   {
       def dockerImageName= 'iqradocker/javadedockerapp_$JOB_NAME:$BUILD_NUMBER'
       stage('SCM Checkout'){
          git 'https://github.com/Iqra-Fathima/java-groovy-docker.git'          
